@@ -1,0 +1,14 @@
+{
+  "name": "babel-plugin-transform-for-of-without-iterator",
+  "version": "1.0.0",
+  "description": "📷 The fastest and most versatile JavaScript EXIF reading library.",
+  "author": "Mike Kovarik",
+  "license": "MIT",
+  "main": "index.js",
+  "bugs": "https://github.com/MikeKovarik/babel-plugin-transform-for-of-without-iterator/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeKovarik/babel-plugin-transform-for-of-without-iterator.git"
+  },
+  "keywords": ["babel", "plugin", "for-of"]
+}
