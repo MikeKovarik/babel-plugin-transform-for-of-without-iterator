@@ -2,7 +2,11 @@ module.exports = function({template, types: t}) {
 
 	let arrayifyTemplate = template(`
 		let ARRAY = INPUT
-		if (!Array.isArray(ARRAY)) ARRAY = Array.from(ARRAY);
+		if (!Array.isArray(ARRAY)) {
+			if (typeof ARRAY.entries === 'function')
+				ARRAY = ARRAY.entries();
+			ARRAY = Array.from(ARRAY);
+		}
 	`)
 
 	let buildForOfArray = template(`

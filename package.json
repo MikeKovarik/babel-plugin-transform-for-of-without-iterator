@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-for-of-without-iterator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transpiles for(...of...) syntax without Symbol.iterator",
   "author": "Mike Kovarik",
   "license": "MIT",
@@ -10,5 +10,9 @@
     "type": "git",
     "url": "https://github.com/MikeKovarik/babel-plugin-transform-for-of-without-iterator.git"
   },
-  "keywords": ["babel", "plugin", "for-of"]
+  "keywords": [
+    "babel",
+    "plugin",
+    "for-of"
+  ]
 }
