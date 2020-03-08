@@ -14,9 +14,11 @@ npm install babel-plugin-transform-for-of-without-iterator --save-dev
 
 and add it to the plugin list
 
+```
 {
-  "plugins": ["transform-for-of-array"]
+  "plugins": ["babel-plugin-transform-for-of-without-iterator"]
 }
+```
 
 ## What it does
 
