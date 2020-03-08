@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-for-of-without-iterator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transpiles for(...of...) syntax without Symbol.iterator",
   "author": "Mike Kovarik",
   "license": "MIT",
