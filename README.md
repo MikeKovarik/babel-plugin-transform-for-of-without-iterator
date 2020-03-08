@@ -34,7 +34,7 @@ Supports:
 
 ```js
 for (let [key, val] of map) {
-	console.log('map entry broken', key, val)
+	console.log('map entry', key, val)
 }
 ```
 
@@ -47,10 +47,10 @@ if (!Array.isArray(_arrayified)) {
   _arrayified = Array.from(_arrayified);
 }
 for (var _i = 0; _i < _arrayified.length; _i++) {
-  var _arrayified$_i = _arrayified[_i];
-  var key = _arrayified$_i[0];
-  var val = _arrayified$_i[1];
-  console.log('map entry broken', key, val);
+  var _ref = _arrayified[_i];
+  var _key = _ref[0];
+  var _val = _ref[1];
+  console.log('map entry', _key, _val);
 }
 ```
 
@@ -63,10 +63,10 @@ var _iteratorError = undefined;
 
 try {
   for (var _iterator = map.entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-    var _ref2 = _step.value;
-    var _key = _ref2[0];
-    var _val = _ref2[1];
-    console.log('map entry broken', _key, _val);
+    var _ref = _step.value;
+    var _key = _ref[0];
+    var _val = _ref[1];
+    console.log('map entry', _key, _val);
   }
 } catch (err) {
   _didIteratorError = true;
