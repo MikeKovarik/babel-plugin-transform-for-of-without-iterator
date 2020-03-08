@@ -33,7 +33,7 @@ Supports:
 ### in
 
 ```js
-for (let [key, val] of map.entries()) {
+for (let [key, val] of map) {
 	console.log('map entry broken', key, val)
 }
 ```
@@ -41,8 +41,9 @@ for (let [key, val] of map.entries()) {
 ### out
 
 ```js
-var _arrayified = map.entries();
+var _arrayified = map;
 if (!Array.isArray(_arrayified)) {
+  if (typeof map.entries === 'function') _arrayified = _arrayified.entries();
   _arrayified = Array.from(_arrayified);
 }
 for (var _i = 0; _i < _arrayified.length; _i++) {
